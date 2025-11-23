@@ -1,0 +1,7 @@
+﻿services:
+  bilgenlyd:
+    image: bilgenlyd
+    build:
+      context: .
+      dockerfile: BilgenlyD/Dockerfile
+

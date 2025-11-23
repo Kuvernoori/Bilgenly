@@ -1,0 +1,17 @@
+C:\Users\Sonya\RiderProjects\BilgenlyD\BilgenlyD.Infrastructure.Postgres\bin\Debug\net8.0\BilgenlyD.Infrastructure.Postgres.deps.json
+C:\Users\Sonya\RiderProjects\BilgenlyD\BilgenlyD.Infrastructure.Postgres\bin\Debug\net8.0\BilgenlyD.Infrastructure.Postgres.runtimeconfig.json
+C:\Users\Sonya\RiderProjects\BilgenlyD\BilgenlyD.Infrastructure.Postgres\bin\Debug\net8.0\BilgenlyD.Infrastructure.Postgres.dll
+C:\Users\Sonya\RiderProjects\BilgenlyD\BilgenlyD.Infrastructure.Postgres\bin\Debug\net8.0\BilgenlyD.Infrastructure.Postgres.pdb
+C:\Users\Sonya\RiderProjects\BilgenlyD\BilgenlyD.Infrastructure.Postgres\bin\Debug\net8.0\BilgenlyD.Domain.dll
+C:\Users\Sonya\RiderProjects\BilgenlyD\BilgenlyD.Infrastructure.Postgres\bin\Debug\net8.0\BilgenlyD.Domain.pdb
+C:\Users\Sonya\RiderProjects\BilgenlyD\BilgenlyD.Infrastructure.Postgres\obj\Debug\net8.0\BilgenlyD.Infrastructure.Postgres.csproj.AssemblyReference.cache
+C:\Users\Sonya\RiderProjects\BilgenlyD\BilgenlyD.Infrastructure.Postgres\obj\Debug\net8.0\BilgenlyD.Infrastructure.Postgres.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Sonya\RiderProjects\BilgenlyD\BilgenlyD.Infrastructure.Postgres\obj\Debug\net8.0\BilgenlyD.Infrastructure.Postgres.AssemblyInfoInputs.cache
+C:\Users\Sonya\RiderProjects\BilgenlyD\BilgenlyD.Infrastructure.Postgres\obj\Debug\net8.0\BilgenlyD.Infrastructure.Postgres.AssemblyInfo.cs
+C:\Users\Sonya\RiderProjects\BilgenlyD\BilgenlyD.Infrastructure.Postgres\obj\Debug\net8.0\BilgenlyD.Infrastructure.Postgres.csproj.CoreCompileInputs.cache
+C:\Users\Sonya\RiderProjects\BilgenlyD\BilgenlyD.Infrastructure.Postgres\obj\Debug\net8.0\Bilgenly.DE2026C4.Up2Date
+C:\Users\Sonya\RiderProjects\BilgenlyD\BilgenlyD.Infrastructure.Postgres\obj\Debug\net8.0\BilgenlyD.Infrastructure.Postgres.dll
+C:\Users\Sonya\RiderProjects\BilgenlyD\BilgenlyD.Infrastructure.Postgres\obj\Debug\net8.0\refint\BilgenlyD.Infrastructure.Postgres.dll
+C:\Users\Sonya\RiderProjects\BilgenlyD\BilgenlyD.Infrastructure.Postgres\obj\Debug\net8.0\BilgenlyD.Infrastructure.Postgres.pdb
+C:\Users\Sonya\RiderProjects\BilgenlyD\BilgenlyD.Infrastructure.Postgres\obj\Debug\net8.0\BilgenlyD.Infrastructure.Postgres.genruntimeconfig.cache
+C:\Users\Sonya\RiderProjects\BilgenlyD\BilgenlyD.Infrastructure.Postgres\obj\Debug\net8.0\ref\BilgenlyD.Infrastructure.Postgres.dll

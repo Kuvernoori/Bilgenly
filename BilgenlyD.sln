@@ -1,0 +1,42 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.14.36518.9 d17.14
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BilgenlyD.API", "BilgenlyD.API\BilgenlyD.API.csproj", "{CC36B6B5-E1C4-4F0D-9398-6AD0C92CCB65}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{4EF3AB40-0E14-4973-A50E-3D34364CEC2A}"
+	ProjectSection(SolutionItems) = preProject
+		compose.yaml = compose.yaml
+	EndProjectSection
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BilgenlyD.Infrastructure.Postgres", "BilgenlyD.Infrastructure.Postgres\BilgenlyD.Infrastructure.Postgres.csproj", "{86E161EA-0ED5-4BB0-95FA-61F296D6632B}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BilgenlyD.Domain", "BilgenlyD.Domain\BilgenlyD.Domain.csproj", "{06579D6C-8274-410F-9720-6BCB021F7349}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{CC36B6B5-E1C4-4F0D-9398-6AD0C92CCB65}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{CC36B6B5-E1C4-4F0D-9398-6AD0C92CCB65}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{CC36B6B5-E1C4-4F0D-9398-6AD0C92CCB65}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{CC36B6B5-E1C4-4F0D-9398-6AD0C92CCB65}.Release|Any CPU.Build.0 = Release|Any CPU
+		{86E161EA-0ED5-4BB0-95FA-61F296D6632B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{86E161EA-0ED5-4BB0-95FA-61F296D6632B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{86E161EA-0ED5-4BB0-95FA-61F296D6632B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{86E161EA-0ED5-4BB0-95FA-61F296D6632B}.Release|Any CPU.Build.0 = Release|Any CPU
+		{06579D6C-8274-410F-9720-6BCB021F7349}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{06579D6C-8274-410F-9720-6BCB021F7349}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{06579D6C-8274-410F-9720-6BCB021F7349}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{06579D6C-8274-410F-9720-6BCB021F7349}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {51062F07-039F-4E08-BD42-8EC9452CD9D8}
+	EndGlobalSection
+EndGlobal
