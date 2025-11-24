@@ -34,12 +34,4 @@
       <ProjectReference Include="..\BilgenlyD.Infrastructure.Postgres\BilgenlyD.Infrastructure.Postgres.csproj" />
     </ItemGroup>
 
-    <ItemGroup>
-      <Folder Include="Models\DTOs\Achievement\" />
-      <Folder Include="Models\DTOs\Answer\" />
-      <Folder Include="Models\DTOs\Question\" />
-      <Folder Include="Models\DTOs\QuizCategory\" />
-      <Folder Include="Models\DTOs\Result\" />
-    </ItemGroup>
-
 </Project>
