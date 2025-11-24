@@ -39,9 +39,6 @@
       <Folder Include="Models\DTOs\Answer\" />
       <Folder Include="Models\DTOs\Category\" />
       <Folder Include="Models\DTOs\CourseCategory\" />
-      <Folder Include="Models\DTOs\Course\" />
-      <Folder Include="Models\DTOs\Enrollment\" />
-      <Folder Include="Models\DTOs\Lesson\" />
       <Folder Include="Models\DTOs\Question\" />
       <Folder Include="Models\DTOs\QuizCategory\" />
       <Folder Include="Models\DTOs\Quiz\" />
