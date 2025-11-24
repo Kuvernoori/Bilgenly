@@ -37,11 +37,8 @@
     <ItemGroup>
       <Folder Include="Models\DTOs\Achievement\" />
       <Folder Include="Models\DTOs\Answer\" />
-      <Folder Include="Models\DTOs\Category\" />
-      <Folder Include="Models\DTOs\CourseCategory\" />
       <Folder Include="Models\DTOs\Question\" />
       <Folder Include="Models\DTOs\QuizCategory\" />
-      <Folder Include="Models\DTOs\Quiz\" />
       <Folder Include="Models\DTOs\Result\" />
     </ItemGroup>
 
