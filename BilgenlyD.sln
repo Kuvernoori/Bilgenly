@@ -14,6 +14,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BilgenlyD.Infrastructure", 
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BilgenlyD.Domain", "BilgenlyD.Domain\BilgenlyD.Domain.csproj", "{06579D6C-8274-410F-9720-6BCB021F7349}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BilgenlyD.Application", "BilgenlyD.Application\BilgenlyD.Application.csproj", "{6FF9D9CE-855F-4AFB-8B1F-B8240854F2A7}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -32,6 +34,10 @@ Global
 		{06579D6C-8274-410F-9720-6BCB021F7349}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{06579D6C-8274-410F-9720-6BCB021F7349}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{06579D6C-8274-410F-9720-6BCB021F7349}.Release|Any CPU.Build.0 = Release|Any CPU
+		{6FF9D9CE-855F-4AFB-8B1F-B8240854F2A7}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{6FF9D9CE-855F-4AFB-8B1F-B8240854F2A7}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{6FF9D9CE-855F-4AFB-8B1F-B8240854F2A7}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{6FF9D9CE-855F-4AFB-8B1F-B8240854F2A7}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

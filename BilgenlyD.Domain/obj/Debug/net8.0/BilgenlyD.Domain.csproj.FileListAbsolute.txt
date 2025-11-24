@@ -9,3 +9,4 @@ C:\Users\Sonya\RiderProjects\BilgenlyD\BilgenlyD.Domain\obj\Debug\net8.0\Bilgenl
 C:\Users\Sonya\RiderProjects\BilgenlyD\BilgenlyD.Domain\obj\Debug\net8.0\refint\BilgenlyD.Domain.dll
 C:\Users\Sonya\RiderProjects\BilgenlyD\BilgenlyD.Domain\obj\Debug\net8.0\BilgenlyD.Domain.pdb
 C:\Users\Sonya\RiderProjects\BilgenlyD\BilgenlyD.Domain\obj\Debug\net8.0\ref\BilgenlyD.Domain.dll
+C:\Users\Sonya\RiderProjects\BilgenlyD\BilgenlyD.Domain\obj\Debug\net8.0\BilgenlyD.Domain.sourcelink.json

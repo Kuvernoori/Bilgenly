@@ -13,7 +13,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("BilgenlyD.Domain")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+b942977960f0f101997a095db4bed316bd32db56")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+18697254b923cd8e06a166c4fbb2dd3818475e59")]
 [assembly: System.Reflection.AssemblyProductAttribute("BilgenlyD.Domain")]
 [assembly: System.Reflection.AssemblyTitleAttribute("BilgenlyD.Domain")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
