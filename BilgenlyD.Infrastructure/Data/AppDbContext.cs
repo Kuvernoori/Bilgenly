@@ -1,7 +1,7 @@
-﻿using Microsoft.EntityFrameworkCore;
-using BilgenlyD.Domain.Entities;
+﻿using BilgenlyD.Domain.Entities;
+using Microsoft.EntityFrameworkCore;
 
-namespace BilgenlyD.Infrastructure.Postgres.Data;
+namespace BilgenlyD.Infrastructure.Data;
 
 
 public class AppDbContext : DbContext

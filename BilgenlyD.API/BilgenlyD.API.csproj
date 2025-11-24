@@ -35,8 +35,4 @@
       <ProjectReference Include="..\BilgenlyD.Infrastructure\BilgenlyD.Infrastructure.csproj" />
     </ItemGroup>
 
-    <ItemGroup>
-      <Folder Include="Models\" />
-    </ItemGroup>
-
 </Project>

@@ -1,4 +1,4 @@
-using BilgenlyD.Infrastructure.Postgres.Data;
+using BilgenlyD.Infrastructure.Data;
 using Microsoft.EntityFrameworkCore;
 
 var builder = WebApplication.CreateBuilder(args);
