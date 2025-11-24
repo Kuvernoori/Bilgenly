@@ -30,6 +30,7 @@
     </ItemGroup>
 
     <ItemGroup>
+      <ProjectReference Include="..\BilgenlyD.Application\BilgenlyD.Application.csproj" />
       <ProjectReference Include="..\BilgenlyD.Domain\BilgenlyD.Domain.csproj" />
       <ProjectReference Include="..\BilgenlyD.Infrastructure\BilgenlyD.Infrastructure.csproj" />
     </ItemGroup>
