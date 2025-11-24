@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "IAuNgg7blnY=",
+  "dgSpecHash": "IAKzHFv8leg=",
   "success": true,
-  "projectFilePath": "C:\\Users\\Sonya\\RiderProjects\\BilgenlyD\\BilgenlyD.Infrastructure.Postgres\\BilgenlyD.Infrastructure.Postgres.csproj",
+  "projectFilePath": "C:\\Users\\Sonya\\RiderProjects\\BilgenlyD\\BilgenlyD.Infrastructure\\BilgenlyD.Infrastructure.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\Sonya\\.nuget\\packages\\humanizer.core\\2.14.1\\humanizer.core.2.14.1.nupkg.sha512",
     "C:\\Users\\Sonya\\.nuget\\packages\\microsoft.bcl.asyncinterfaces\\6.0.0\\microsoft.bcl.asyncinterfaces.6.0.0.nupkg.sha512",

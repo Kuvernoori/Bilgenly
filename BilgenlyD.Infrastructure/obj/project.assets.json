@@ -2170,11 +2170,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\Sonya\\RiderProjects\\BilgenlyD\\BilgenlyD.Infrastructure.Postgres\\BilgenlyD.Infrastructure.Postgres.csproj",
-      "projectName": "BilgenlyD.Infrastructure.Postgres",
-      "projectPath": "C:\\Users\\Sonya\\RiderProjects\\BilgenlyD\\BilgenlyD.Infrastructure.Postgres\\BilgenlyD.Infrastructure.Postgres.csproj",
+      "projectUniqueName": "C:\\Users\\Sonya\\RiderProjects\\BilgenlyD\\BilgenlyD.Infrastructure\\BilgenlyD.Infrastructure.csproj",
+      "projectName": "BilgenlyD.Infrastructure",
+      "projectPath": "C:\\Users\\Sonya\\RiderProjects\\BilgenlyD\\BilgenlyD.Infrastructure\\BilgenlyD.Infrastructure.csproj",
       "packagesPath": "C:\\Users\\Sonya\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\Sonya\\RiderProjects\\BilgenlyD\\BilgenlyD.Infrastructure.Postgres\\obj\\",
+      "outputPath": "C:\\Users\\Sonya\\RiderProjects\\BilgenlyD\\BilgenlyD.Infrastructure\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\Sonya\\AppData\\Roaming\\NuGet\\NuGet.Config"

@@ -10,7 +10,7 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution 
 		compose.yaml = compose.yaml
 	EndProjectSection
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BilgenlyD.Infrastructure.Postgres", "BilgenlyD.Infrastructure.Postgres\BilgenlyD.Infrastructure.Postgres.csproj", "{86E161EA-0ED5-4BB0-95FA-61F296D6632B}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BilgenlyD.Infrastructure", "BilgenlyD.Infrastructure\BilgenlyD.Infrastructure.csproj", "{86E161EA-0ED5-4BB0-95FA-61F296D6632B}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BilgenlyD.Domain", "BilgenlyD.Domain\BilgenlyD.Domain.csproj", "{06579D6C-8274-410F-9720-6BCB021F7349}"
 EndProject

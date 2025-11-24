@@ -31,7 +31,7 @@
 
     <ItemGroup>
       <ProjectReference Include="..\BilgenlyD.Domain\BilgenlyD.Domain.csproj" />
-      <ProjectReference Include="..\BilgenlyD.Infrastructure.Postgres\BilgenlyD.Infrastructure.Postgres.csproj" />
+      <ProjectReference Include="..\BilgenlyD.Infrastructure\BilgenlyD.Infrastructure.csproj" />
     </ItemGroup>
 
 </Project>
