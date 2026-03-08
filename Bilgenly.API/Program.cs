@@ -58,6 +58,8 @@ builder.Services.AddSwaggerGen(options =>
         }
     });
 });
+builder.Services.AddScoped<IQuizRepository, QuizRepository>();
+builder.Services.AddScoped<QuizService>();
 builder.Services.AddControllers();
 var app = builder.Build();
     
