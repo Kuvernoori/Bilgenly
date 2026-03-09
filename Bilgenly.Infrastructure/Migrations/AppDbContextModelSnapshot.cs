@@ -54,6 +54,9 @@ namespace Bilgenly.Infrastructure.Migrations
                     b.Property<DateTime>("DateTaken")
                         .HasColumnType("timestamp with time zone");
 
+                    b.Property<bool>("IsCompleted")
+                        .HasColumnType("boolean");
+
                     b.Property<Guid>("QuizId")
                         .HasColumnType("uuid");
 

@@ -12,4 +12,5 @@ public class Attempt
     
     public int Score { get; set; }
     public DateTime DateTaken { get; set; }
+    public bool IsCompleted { get; set; } = false;
 }
