@@ -21,11 +21,11 @@ public class AuthService
         _configuration = configuration;
     }
 
-    public async Task<(AuthResponseDto? Response, string? Error)> RegisterAsync(RegisterDto dto)
+    public async Task<(AuthResponseDto? Response, string? Error)> RegisterAsync(string token, string username, string email, string role)
     {
-        if (!Enum.TryParse<UserRole>(dto.Role, out var role))
-            return (null, $"Role '{dto.Role}' does not exist. Available roles: Student, Teacher, Moderator");
-        if (role == UserRole.Moderator)
+        if (!Enum.TryParse<UserRoleEnum>(dto.RoleEnum, out var role))
+            return (null, $"Role '{dto.RoleEnum}' does not exist. Available roles: Student, Teacher, Moderator");
+        if (role == UserRoleEnum.Moderator)
             return (null, "You cannot register as moderator");
         if (await _userRepository.ExistsByEmailAsync(dto.Email))
             return (null, "Email is already taken");
@@ -35,7 +35,7 @@ public class AuthService
             Username = dto.Username,
             Email = dto.Email,
             PasswordHash = BCrypt.Net.BCrypt.HashPassword(dto.Password),
-            Role = role
+            RoleEnum = role
         };
 
         await _userRepository.AddAsync(user);
@@ -46,7 +46,7 @@ public class AuthService
             Token = GenerateToken(user),
             Username = user.Username,
             Email = user.Email,
-            Role = user.Role.ToString()
+            Role = user.RoleEnum.ToString()
         }, null);
     }
 
@@ -63,7 +63,7 @@ public class AuthService
             Token = GenerateToken(user),
             Username = user.Username,
             Email = user.Email,
-            Role = user.Role.ToString()
+            Role = user.RoleEnum.ToString()
         }, null);
     }
 
@@ -75,7 +75,7 @@ public class AuthService
                 new Claim(ClaimTypes.NameIdentifier, user.Id.ToString()),
                 new Claim(ClaimTypes.Email, user.Email),
                 new Claim(ClaimTypes.Name, user.Username),
-                new Claim(ClaimTypes.Role, user.Role.ToString())
+                new Claim(ClaimTypes.Role, user.RoleEnum.ToString())
             };
 
             var token = new JwtSecurityToken(

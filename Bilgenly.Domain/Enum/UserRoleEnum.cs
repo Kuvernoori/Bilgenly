@@ -1,6 +1,6 @@
 ﻿namespace Bilgenly.Domain.Entities;
 
-public enum UserRole
+public enum UserRoleEnum : byte
 {
     Student,
     Teacher,

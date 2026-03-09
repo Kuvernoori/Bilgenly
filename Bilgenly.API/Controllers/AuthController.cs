@@ -3,6 +3,7 @@ using Bilgenly.Application.Services;
 using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
 using System.Security.Claims;
+using Bilgenly.API.Contracts;
 
 namespace Bilgenly.API.Controllers;
 
@@ -18,9 +19,9 @@ public class AuthController  : ControllerBase
     }
 
     [HttpPost("register")]
-    public async Task<IActionResult> Register(RegisterDto dto)
+    public async Task<IActionResult> Register(UserRegisterRequest request, CancellationToken ct)
     {
-        var (result, error) = await _authService.RegisterAsync(dto);
+        var (result, error) = await _authService.RegisterAsync(request);
         if (result is null)
             return BadRequest(new { message = error });
         return Ok(result);
