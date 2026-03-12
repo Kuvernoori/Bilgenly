@@ -5,6 +5,7 @@ public interface IAttemptRepository
 {
     Task<Attempt?> GetByIdAsync(Guid id);
     Task<IEnumerable<Attempt>> GetByUserIdAsync(Guid userId);
+    Task<IEnumerable<Attempt>> GetByQuizIdAsync(Guid quizId);
     Task AddAsync(Attempt attempt);
     Task SaveChangesAsync();
 }

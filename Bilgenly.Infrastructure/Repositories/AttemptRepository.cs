@@ -26,7 +26,13 @@ public class AttemptRepository : IAttemptRepository
             .Where(a => a.UserId == userId)
             .Include(a => a.Quiz)
             .ToListAsync();
-
+    public async Task<IEnumerable<Attempt>> GetByQuizIdAsync(Guid quizId) 
+        => await _context.Attempts
+            .Where(a => a.QuizId == quizId && a.IsCompleted)
+            .Include(a => a.User)
+            .OrderByDescending(a => a.DateTaken)
+            .ToListAsync();
+    
     public async Task AddAsync(Attempt attempt)
         => await _context.Attempts.AddAsync(attempt);
 

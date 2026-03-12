@@ -62,6 +62,7 @@ builder.Services.AddScoped<IQuizRepository, QuizRepository>();
 builder.Services.AddScoped<QuizService>();
 builder.Services.AddScoped<IAttemptRepository, AttemptRepository>();
 builder.Services.AddScoped<AttemptService>();
+builder.Services.AddScoped<AnalyticsService>();
 builder.Services.AddControllers();
 var app = builder.Build();
     
