@@ -75,6 +75,35 @@ namespace Bilgenly.Infrastructure.Migrations
                     b.ToTable("Attempts");
                 });
 
+            modelBuilder.Entity("Bilgenly.Domain.Entities.AttemptAnswer", b =>
+                {
+                    b.Property<Guid>("Id")
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("uuid");
+
+                    b.Property<Guid>("AnswerId")
+                        .HasColumnType("uuid");
+
+                    b.Property<Guid>("AttemptId")
+                        .HasColumnType("uuid");
+
+                    b.Property<bool>("IsCorrect")
+                        .HasColumnType("boolean");
+
+                    b.Property<Guid>("QuestionId")
+                        .HasColumnType("uuid");
+
+                    b.HasKey("Id");
+
+                    b.HasIndex("AnswerId");
+
+                    b.HasIndex("AttemptId");
+
+                    b.HasIndex("QuestionId");
+
+                    b.ToTable("AttemptAnswers");
+                });
+
             modelBuilder.Entity("Bilgenly.Domain.Entities.Question", b =>
                 {
                     b.Property<Guid>("Id")
@@ -191,6 +220,33 @@ namespace Bilgenly.Infrastructure.Migrations
                     b.Navigation("User");
                 });
 
+            modelBuilder.Entity("Bilgenly.Domain.Entities.AttemptAnswer", b =>
+                {
+                    b.HasOne("Bilgenly.Domain.Entities.Answer", "Answer")
+                        .WithMany()
+                        .HasForeignKey("AnswerId")
+                        .OnDelete(DeleteBehavior.Cascade)
+                        .IsRequired();
+
+                    b.HasOne("Bilgenly.Domain.Entities.Attempt", "Attempt")
+                        .WithMany("AttemptAnswers")
+                        .HasForeignKey("AttemptId")
+                        .OnDelete(DeleteBehavior.Cascade)
+                        .IsRequired();
+
+                    b.HasOne("Bilgenly.Domain.Entities.Question", "Question")
+                        .WithMany()
+                        .HasForeignKey("QuestionId")
+                        .OnDelete(DeleteBehavior.Cascade)
+                        .IsRequired();
+
+                    b.Navigation("Answer");
+
+                    b.Navigation("Attempt");
+
+                    b.Navigation("Question");
+                });
+
             modelBuilder.Entity("Bilgenly.Domain.Entities.Question", b =>
                 {
                     b.HasOne("Bilgenly.Domain.Entities.Quiz", "Quiz")
@@ -211,6 +267,11 @@ namespace Bilgenly.Infrastructure.Migrations
                         .IsRequired();
 
                     b.Navigation("User");
+                });
+
+            modelBuilder.Entity("Bilgenly.Domain.Entities.Attempt", b =>
+                {
+                    b.Navigation("AttemptAnswers");
                 });
 
             modelBuilder.Entity("Bilgenly.Domain.Entities.Question", b =>

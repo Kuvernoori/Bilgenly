@@ -13,12 +13,14 @@ public class AttemptRepository : IAttemptRepository
     {
         _context = context;
     }
-
+    public async Task AddAnswersAsync(IEnumerable<AttemptAnswer> answers)
+        => await _context.AttemptAnswers.AddRangeAsync(answers);
     public async Task<Attempt?> GetByIdAsync(Guid id)
         => await _context.Attempts
             .Include(a => a.Quiz)
             .ThenInclude(q => q.Questions)
             .ThenInclude(q => q.Answers)
+            .Include(a => a.AttemptAnswers)
             .FirstOrDefaultAsync(a => a.Id == id);
 
     public async Task<IEnumerable<Attempt>> GetByUserIdAsync(Guid userId)
@@ -30,6 +32,7 @@ public class AttemptRepository : IAttemptRepository
         => await _context.Attempts
             .Where(a => a.QuizId == quizId && a.IsCompleted)
             .Include(a => a.User)
+            .Include(a => a.AttemptAnswers)
             .OrderByDescending(a => a.DateTaken)
             .ToListAsync();
     

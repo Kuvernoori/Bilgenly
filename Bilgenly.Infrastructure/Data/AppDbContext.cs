@@ -9,6 +9,7 @@ public class AppDbContext : DbContext
     public DbSet<User> Users => Set<User>();
     public DbSet<Quiz> Quizzes => Set<Quiz>();
     public DbSet<Attempt> Attempts => Set<Attempt>();
+    public DbSet<AttemptAnswer> AttemptAnswers => Set<AttemptAnswer>();
 
     protected override void OnModelCreating(ModelBuilder modelBuilder)
     {
@@ -31,6 +32,10 @@ public class AppDbContext : DbContext
             e.HasOne(a => a.User)
                 .WithMany(u => u.Attempts)
                 .HasForeignKey(a => a.UserId);
+            
+            e.HasMany(a => a.AttemptAnswers)
+                .WithOne(aa => aa.Attempt)
+                .HasForeignKey(aa => aa.AttemptId);
         });
     }
     

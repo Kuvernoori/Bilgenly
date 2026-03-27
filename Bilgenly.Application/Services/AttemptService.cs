@@ -81,6 +81,7 @@ public class AttemptService
 
         var quiz = attempt.Quiz;
         var questionResults = new List<QuestionResultDto>();
+        var attemptAnswers = new List<AttemptAnswer>();
         int correctCount = 0;
 
         foreach (var question in quiz.Questions)
@@ -93,6 +94,17 @@ public class AttemptService
             bool isCorrect = selectedAnswer?.IsCorrect ?? false;
             if (isCorrect) correctCount++;
 
+            if (studentAnswer != null)
+            {
+                attemptAnswers.Add(new AttemptAnswer
+                {
+                  Id = Guid.NewGuid(),
+                  AttemptId = attempt.Id,
+                  QuestionId = question.Id,
+                  AnswerId = studentAnswer.AnswerId,
+                  IsCorrect = isCorrect,
+                });
+            }
             questionResults.Add(new QuestionResultDto
             {
                 QuestionId = question.Id,
@@ -110,6 +122,7 @@ public class AttemptService
 
         attempt.Score = score;
         attempt.IsCompleted = true;
+        await _attemptRepository.AddAnswersAsync(attemptAnswers);
         await _attemptRepository.SaveChangesAsync();
 
         return (new AttemptResultDto

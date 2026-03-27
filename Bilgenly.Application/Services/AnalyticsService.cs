@@ -26,7 +26,7 @@ public class AnalyticsService
         if (quiz.UserId != requestingUserId)
             return (null, "Access denied");
         
-        var attempts = (await  _attemptRepository.GetByQuizIdAsync(quiz.UserId)).ToList();
+        var attempts = (await  _attemptRepository.GetByQuizIdAsync(quizId)).ToList();
         
         if (!attempts.Any())
         {
@@ -44,14 +44,16 @@ public class AnalyticsService
 
         var questionStats = quiz.Questions.Select(q =>
         {
-            var correctAnswer = q.Answers.FirstOrDefault(a => a.IsCorrect);
-            int totalAnswered = attempts.Count;
+            int totalAnswered = attempts.Count(a =>
+                a.AttemptAnswers.Any(aa => aa.QuestionId == q.Id));
+
             int correctCount = attempts.Count(a =>
-                a.Score >= (int)Math.Round(1.0 / quiz.Questions.Count * 100));
+                a.AttemptAnswers.Any(aa => aa.QuestionId == q.Id && aa.IsCorrect));
 
             double correctPct = totalAnswered > 0
                 ? Math.Round((double)correctCount / totalAnswered * 100, 1)
                 : 0;
+
             return new QuestionAnalyticsDto
             {
                 QuestionId = q.Id,

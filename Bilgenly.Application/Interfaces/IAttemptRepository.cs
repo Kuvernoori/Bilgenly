@@ -8,4 +8,5 @@ public interface IAttemptRepository
     Task<IEnumerable<Attempt>> GetByQuizIdAsync(Guid quizId);
     Task AddAsync(Attempt attempt);
     Task SaveChangesAsync();
+    Task AddAnswersAsync(IEnumerable<AttemptAnswer> answers);
 }
